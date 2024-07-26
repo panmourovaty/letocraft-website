@@ -79,9 +79,17 @@ p {
     color: #fff;
     border-radius: 1rem;
     padding: 20px;
-    margin: 15px;
+    margin: 10px;
     height: max-content;
     width: max-content;
+}
+
+.button:hover {
+    background-color: rgba(0, 0, 0, 1.0);
+    border-color: #fff;
+    border-width: 1px;
+    padding: 19px;
+    border-style: solid;
 }
 
 .box {
@@ -92,7 +100,7 @@ p {
 
 @media (max-width: 1500px) {
     .content {
-        max-width: 60%;
+        max-width: 80%;
     }
 }
 
