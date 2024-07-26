@@ -11,7 +11,7 @@ body {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    transition: background-image 3s ease-in-out;
+    transition: background-image 4s ease-in-out;
     position: relative;
     background-color: #000;
     background-image: url(assets/gallery/gallery1.avif);
@@ -67,14 +67,14 @@ p {
 .addressfield {
     display: flex;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.6);
     width: max-content;
     border-radius: 1rem;
     margin: 15px;
 }
 
 .button {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.6);
     text-decoration: none;
     color: #fff;
     border-radius: 1rem;

@@ -4,7 +4,12 @@ const images = [
     'assets/gallery/gallery2.avif',
     'assets/gallery/gallery3.avif',
     'assets/gallery/gallery4.avif',
-    'assets/gallery/gallery5.avif'
+    'assets/gallery/gallery5.avif',
+    'assets/gallery/gallery6.avif',
+    'assets/gallery/gallery7.avif',
+    'assets/gallery/gallery8.avif',
+    'assets/gallery/gallery9.avif',
+    'assets/gallery/gallery10.avif'
 ];
 
 let currentIndex = 0;
@@ -31,5 +36,5 @@ document.addEventListener('DOMContentLoaded', (event) => {
     changeBackgroundImage();
 
     // Start background image rotation
-    setInterval(changeBackgroundImage, 5000);
+    setInterval(changeBackgroundImage, 7000);
 });
