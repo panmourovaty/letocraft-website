@@ -109,6 +109,7 @@ p {
     display: flex;
     align-items: center;
     padding: 5px;
+    text-decoration: none;
 }
 
 @media (max-width: 1500px) {
