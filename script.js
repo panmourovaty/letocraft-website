@@ -52,21 +52,20 @@ async function fetchPlayers() {
         // Create player list and display it
         const playerListContainer = document.getElementById('playerlist');
         const ul = document.createElement('ul');
-        ul.classList.add("playerlist");
 
         // Create a list of player names
         players.list.forEach(({ name }) => {
             const li = document.createElement('li');
-            
-            const namelink = document.createElement('a');
-            namelink.href = 'https://cs.namemc.com/profile/' + name;
-            namelink.textContent = name; 
-            namelink.target = '_blank';
-            
-            li.appendChild = namelink;
-            li.classList.add("playerlistitem");
 
-            // Append the list item to the unordered list
+            // Wrap player name in a clickable link to NameMC profile
+            const link = document.createElement('a');
+            link.href = `https://cs.namemc.com/profile/${name}`;
+            link.textContent = name;
+            link.target = '_blank'; // Open link in a new tab
+            link.rel = 'noopener noreferrer'; // Security best practice for new tabs
+
+            // Append the link to the list item
+            li.appendChild(link);
             ul.appendChild(li);
         });
 
@@ -98,5 +97,6 @@ function loadPlayerAvatars(players) {
         listItems[index].insertBefore(img, listItems[index].firstChild);
     });
 }
+
 // Ensure the function runs after the page loads
 window.addEventListener('DOMContentLoaded', fetchPlayers);
