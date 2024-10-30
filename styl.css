@@ -100,6 +100,10 @@ p {
     align-items: center;
 }
 
+.playerlist {
+    list-style-type: none;
+}
+
 @media (max-width: 1500px) {
     .content {
         max-width: 80%;
