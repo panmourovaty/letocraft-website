@@ -102,6 +102,13 @@ p {
 
 .playerlist {
     list-style-type: none;
+    padding: 0;
+}
+
+.playerlistitem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 @media (max-width: 1500px) {
