@@ -60,8 +60,8 @@ async function fetchPlayers() {
             
             const namelink = document.createElement('a');
             namelink.href = 'https://cs.namemc.com/profile/' + name;
-            link.textContent = name; 
-            link.target = '_blank';
+            namelink.textContent = name; 
+            namelink.target = '_blank';
             
             li.appendChild = namelink;
             li.classList.add("playerlistitem");
