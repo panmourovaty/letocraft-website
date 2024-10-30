@@ -57,7 +57,13 @@ async function fetchPlayers() {
         // Create a list of player names
         players.list.forEach(({ name }) => {
             const li = document.createElement('li');
-            li.textContent = name; // Add the player's name
+            
+            const namelink = document.createElement('a');
+            namelink.href = 'https://cs.namemc.com/profile/' + name;
+            link.textContent = name; 
+            link.target = '_blank';
+            
+            li.appendChild = namelink;
             li.classList.add("playerlistitem");
 
             // Append the list item to the unordered list
