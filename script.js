@@ -38,3 +38,33 @@ document.addEventListener('DOMContentLoaded', (event) => {
     // Start background image rotation
     setInterval(changeBackgroundImage, 7000);
 });
+
+// fetchPlayers.js
+async function fetchPlayers() {
+    try {
+        const response = await fetch('https://api.mcsrvstat.us/3/77.240.188.146');
+        if (!response.ok) throw new Error('Network response was not ok');
+
+        const data = await response.json();
+
+        // Check if the players list exists and has players
+        if (data.players && Array.isArray(data.players.list) && data.players.list.length > 0) {
+            const ul = document.createElement('ul');
+
+            data.players.list.forEach(player => {
+                const li = document.createElement('li');
+                li.textContent = player.name; // Display the player's name only
+                ul.appendChild(li);
+            });
+
+            const playerListContainer = document.getElementById('playerlist');
+            playerListContainer.appendChild(ul);
+            playerListContainer.style.display = 'block'; // Show the div if players are present
+        }
+    } catch (error) {
+        console.error('Failed to fetch player list:', error);
+    }
+}
+
+// Fetch players after the page has loaded
+window.addEventListener('load', fetchPlayers);
