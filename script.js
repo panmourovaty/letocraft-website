@@ -56,6 +56,7 @@ async function fetchPlayers() {
         // Create a list of player names
         players.list.forEach(({ name }) => {
             const li = document.createElement('li');
+            li.classList.add("playerlistitem");
 
             // Wrap player name in a clickable link to NameMC profile
             const link = document.createElement('a');
