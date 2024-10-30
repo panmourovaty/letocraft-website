@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 async function fetchPlayers() {
     try {
-        const response = await fetch('https://api.mcsrvstat.us/3/77.240.188.146');
+        const response = await fetch('https://api.mcsrvstat.us/3/play.letocraft.cz');
         if (!response.ok) return;  // Exit if the response is not successful
 
         const { players } = await response.json();
