@@ -58,6 +58,7 @@ async function fetchPlayers() {
         players.list.forEach(({ name }) => {
             const li = document.createElement('li');
             li.textContent = name; // Add the player's name
+            li.classList.add("playerlistitem");
 
             // Append the list item to the unordered list
             ul.appendChild(li);
