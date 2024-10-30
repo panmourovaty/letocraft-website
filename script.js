@@ -64,7 +64,8 @@ async function fetchPlayers() {
             link.href = `https://cs.namemc.com/profile/${name}`;
             link.textContent = name;
             link.target = '_blank'; // Open link in a new tab
-            link.rel = 'noopener noreferrer'; // Security best practice for new tabs
+            link.rel = 'noopener noreferrer';
+            link.style.textDecoration = "none";
 
             // Append the link to the list item
             li.appendChild(link);
