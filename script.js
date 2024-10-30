@@ -52,6 +52,7 @@ async function fetchPlayers() {
         // Create player list and display it
         const playerListContainer = document.getElementById('playerlist');
         const ul = document.createElement('ul');
+        ul.classList.add("playerlist");
 
         // Create a list of player names
         players.list.forEach(({ name }) => {
