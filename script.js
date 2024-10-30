@@ -66,6 +66,7 @@ async function fetchPlayers() {
             link.target = '_blank'; // Open link in a new tab
             link.rel = 'noopener noreferrer';
             link.style.textDecoration = "none";
+            link.style.color = "white";
 
             // Append the link to the list item
             li.appendChild(link);
