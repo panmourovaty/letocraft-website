@@ -1,4 +1,10 @@
 @font-face {
+    font-family: 'Lato';
+    font-display: swap;
+    src: url("assets/Lato.woff2") format("woff2");
+}
+
+@font-face {
     font-family: 'Minecraft';
     font-display: swap;
     src: url("assets/MinecraftEvenings.woff2") format("woff2");
