@@ -90,6 +90,8 @@ p {
     margin: 10px;
     height: max-content;
     width: max-content;
+    align-items: center;
+    display: inline-flex;
 }
 
 .button:hover {
