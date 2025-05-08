@@ -1,15 +1,6 @@
 // Background gallery
 const images = [
-    'assets/gallery/gallery1.avif',
-    'assets/gallery/gallery2.avif',
-    'assets/gallery/gallery3.avif',
-    'assets/gallery/gallery4.avif',
-    'assets/gallery/gallery5.avif',
-    'assets/gallery/gallery6.avif',
-    'assets/gallery/gallery7.avif',
-    'assets/gallery/gallery8.avif',
-    'assets/gallery/gallery9.avif',
-    'assets/gallery/gallery10.avif'
+    'assets/gallery/gallery1.avif'
 ];
 
 let currentIndex = 0;
